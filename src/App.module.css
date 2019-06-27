@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.ImageContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.Background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.UnderConstruction {
+  width: 95%;
+  position: fixed;
+  top: 38%;
+  left: 2.5%
+}
+
+.UnderConstruction h1 {
+  font-size: 200%;
+  letter-spacing: 5px;
+  color: rgb(236, 237, 230);
+  font-family: flood-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.TopLeftContainer {
+  position: fixed;
+  top: 5%;
+  left: 2.5%;
+  width: 95%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.Logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.TopLeftContainer h3 {
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 90%;
+  margin: 0;
+  padding: 0;
+  color: rgba(156, 172, 146, 1);
+  letter-spacing: 2px
+}
+
+.BottomRightContainer {
+  position: fixed;
+  bottom: 8%;
+  right: 3%;
+  text-align: left;
+  color: rgb(32, 46, 29);
+}
+
+.BottomRightContainer h3 {
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 70%;
+  margin-bottom: 10px;
+  letter-spacing: 8px
+}
+
+.BottomRightContainer p {
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  font-size: 60%;
+  letter-spacing: 4px
+}
+
+@media (max-width: 1000px) {
+  .App {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .App {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .App {
+    font-size: 20px;
+  }
+  .TopLeftContainer h3 {
+    text-align: center
+  }
+  .BottomRightContainer {
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  .BottomRightContainer h3 {
+    font-size: 100%
+  }
+  .BottomRightContainer p {
+    font-size: 90%
+  }
+}
+
+@media (max-width: 350px) {
+  .App {
+    font-size: 15px;
+  }
+}
+
