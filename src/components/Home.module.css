@@ -1,0 +1,124 @@
+.Home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.Chair {
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  right: 10%;
+  height: 80%;
+  width: 33%;
+  object-fit: contain;
+}
+
+.BallOne {
+  position: absolute;
+  z-index: 0;
+  top: -120px;
+  left: -200px;
+  height: 100%;
+  width: 80%;
+  object-fit: contain;
+}
+
+.BallTwo {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -60%;
+  height: 80%;
+  width: 70%;
+  object-fit: contain;
+}
+
+.MainLogo {
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  height: 110px;
+  width: 110px;
+  object-fit: contain;
+}
+
+.TextContainer {
+  margin-left: 10%;
+  width: 50%;
+  max-width: 600px;
+  margin-bottom: 100px;
+  z-index: 1;
+}
+
+.LogoBanner {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  height: 80px;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+}
+
+.LogoBanner div {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.LogoBanner img {
+  height: 60px;
+  width: 15%;
+  object-fit: contain;
+  margin: auto;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .Home {
+    height: auto;
+    min-height: 100vh;
+    flex-flow: column;
+  }
+  .MainLogo {
+    top: 10px;
+    right: 10px;
+    height: 90px;
+    width: 90px;
+  }
+  .TextContainer {
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+  .BallOne {
+    left: -100px;
+    height: 120%;
+    width: 100%;
+    top: -250px;
+    transform: rotate(90deg);
+  }
+  .Chair {
+    bottom: 30px;
+    top: auto;
+  }
+  .LogoBanner {
+    background: transparent;
+    height: auto;
+    position: relative;
+  }
+  .LogoBanner div {
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+  }
+  .LogoBanner img {
+    width: 25%;
+    height: auto;
+    margin: 20px 0;
+  }
+}

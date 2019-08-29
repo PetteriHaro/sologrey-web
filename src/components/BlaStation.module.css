@@ -1,0 +1,190 @@
+.BlaStation {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+
+.TopLogo,
+.MobileText,
+.MobileGrid {
+  display: none;
+}
+
+.Grid {
+  height: 80%;
+  width: 95%;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 10%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.Chair {
+  position: absolute;
+  z-index: -1;
+  top: -20%;
+  right: -10%;
+  height: 70%;
+  width: 33%;
+  object-fit: contain;
+}
+
+.BallOne {
+  position: absolute;
+  z-index: -1;
+  bottom: -200px;
+  right: -40%;
+  height: 120%;
+  width: 120%;
+  object-fit: contain;
+}
+
+.LargeContainer {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.TopRow {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.LargeTopRowImage {
+  width: 60%;
+  height: 100%;
+}
+
+.BottoRowLarge {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SmallImageCont {
+  width: 40%;
+  height: 100%;
+}
+
+.CompanyInfo {
+  width: 58%;
+}
+
+.SmallTopRowImage {
+  width: 39.2%;
+  height: 100%;
+}
+
+.BottomRow {
+  width: 100%;
+  height: 58.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.VerticalPictureContainer {
+  height: 100%;
+  width: 24.5%;
+  background-color: white;
+}
+
+.VerticalImage,
+.SmallTopRowImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.TopRow img,
+.SmallImageCont img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: white;
+}
+
+@media (max-width: 800px) {
+  .BlaStation {
+    height: auto;
+    margin-top: 100px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .Grid {
+    display: none;
+  }
+  .TopLogo {
+    display: inline-block;
+    height: auto;
+    width: 34%;
+    object-fit: contain;
+    margin-left: 33%;
+    margin-bottom: 20px;
+  }
+  .MobileText {
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+  }
+  .MobileGrid {
+    width: 90%;
+    margin-left: 5%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+  }
+  .LeftColumn,
+  .RightColumn {
+    height: 98%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
+  .RightColumn {
+    width: 55%;
+  }
+
+  .LeftColumn {
+    width: 43%;
+  }
+
+  .LeftTopImage {
+    width: 100%;
+    height: 23%;
+    background-color: white;
+  }
+  .LeftBottomImage {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+  }
+  .RightTopImage {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+  }
+  .RightSmallImage {
+    width: 100%;
+    height: 18%;
+    background-color: white;
+  }
+  .BottomImage {
+    width: 100%;
+    height: 28%;
+  }
+  .MobileGrid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

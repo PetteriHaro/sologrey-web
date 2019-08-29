@@ -1,0 +1,30 @@
+.InfoContainer {
+  width: 92%;
+  height: 100%;
+  margin-left: 4%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.InfoContainer img {
+  width: auto;
+  height: 30%;
+  object-fit: contain;
+  margin-top: 10px;
+  max-width: 120px;
+}
+
+.InfoContainer a {
+  margin: 0;
+  color: rgb(88, 88, 88);
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .InfoContainer {
+    display: none;
+  }
+}

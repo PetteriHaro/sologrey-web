@@ -1,0 +1,110 @@
+.Footer {
+  width: 100%;
+  margin-top: 200px;
+  padding-bottom: 60px;
+  display: flex;
+  position: relative;
+}
+
+.BallOne {
+  position: absolute;
+  z-index: -1;
+  bottom: -90%;
+  right: -40%;
+  height: 120%;
+  width: 120%;
+  object-fit: contain;
+}
+
+.LeftColumn {
+  margin-left: 2.5%;
+}
+
+.Footer p {
+  margin: 0;
+  font-size: 0.35em;
+}
+
+.Links {
+  margin-left: 200px;
+  margin-top: 100px;
+  display: flex;
+  flex-flow: column;
+}
+
+.SocialMedia {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.Links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: sofia-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 5px 0;
+}
+
+.SocialItem {
+  display: flex;
+  align-items: center;
+}
+
+.SocialItem img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  object-fit: contain;
+}
+
+.Logo {
+  position: absolute;
+  bottom: 60px;
+  right: 2.5%;
+  height: 80px;
+  width: 80px;
+}
+
+@media (max-width: 800px) {
+  .BallOne {
+    bottom: -70%;
+  }
+  .Footer h2 {
+    font-size: 0.5em;
+  }
+  .Footer {
+    padding-bottom: 100px;
+  }
+  .Logo {
+    width: 20%;
+    bottom: 20px;
+    height: auto;
+    right: 40%;
+  }
+  .LeftColumn {
+    width: 90%;
+    min-width: 250px;
+  }
+  .Links {
+    position: absolute;
+    right: 5%;
+    margin-top: 50px;
+  }
+  .SocialMedia {
+    position: absolute;
+    right: 10%;
+    margin-top: 150px;
+  }
+  .SocialItem {
+    margin-bottom: -20px;
+  }
+  .SocialItem img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+  }
+  .Links a {
+    margin: 2px 0;
+  }
+}

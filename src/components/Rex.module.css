@@ -1,0 +1,136 @@
+.Rex {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+
+.TopLogo,
+.MobileText,
+.MobileGrid {
+  display: none;
+}
+
+.Grid {
+  height: 80%;
+  width: 95%;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.Chair {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  height: 110%;
+  width: 33%;
+  object-fit: contain;
+}
+
+.BallOne {
+  position: absolute;
+  z-index: -1;
+  bottom: -20%;
+  right: -60%;
+  height: 120%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.VerticalDouble {
+  width: 24.5%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.VerticalContainer {
+  width: 24.5%;
+  height: 100%;
+}
+
+.SmallImage {
+  width: 100%;
+  height: 40%;
+}
+
+.CompanyInfo {
+  width: 100%;
+  height: 60%;
+}
+
+.VerticalContainer img,
+.SmallImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .Rex {
+    height: auto;
+    margin-top: 100px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .Grid {
+    display: none;
+  }
+  .TopLogo {
+    display: inline-block;
+    height: auto;
+    width: 34%;
+    object-fit: contain;
+    margin-left: 33%;
+  }
+  .MobileGrid {
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .MobileText {
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+  }
+  .LeftColumn,
+  .RightColumn {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  .LeftColumn {
+    width: 60%;
+  }
+  .RightColumn {
+    width: 38%;
+  }
+  .LeftImageTop {
+    height: 70%;
+    width: 100%;
+    background-color: white;
+  }
+  .LeftImageBottom {
+    height: 28%;
+    width: 100%;
+    background-color: white;
+  }
+  .RightImage {
+    height: 49%;
+    width: 100%;
+    background-color: white;
+  }
+  .MobileGrid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
