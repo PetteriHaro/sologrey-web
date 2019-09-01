@@ -15,11 +15,12 @@ const footer = props => (
     />
     <div className={styles.LeftColumn}>
       <h2>Sologrey Agency</h2>
-      <h3>Aitoja asioita, mahtavia tarinoita!</h3>
+      <h3 style={{ whiteSpace: 'nowrap' }}>
+        Aitoja asioita, mahtavia tarinoita!
+      </h3>
       <Contact />
-      <p style={{ marginTop: '30px' }}>
-        Laivavarustajankatu 2 D LH6 (1.10. alkaen)
-      </p>
+      <p style={{ marginTop: '30px' }}>(1.10. alkaen)</p>
+      <p>Laivavarustajankatu 2 D LH6</p>
       <p>00140 Helsinki</p>
       <p>Finland</p>
       <p>info@sologrey.fi</p>
