@@ -40,18 +40,34 @@ const home = props => (
         omille asiakkailleen uusia yritysten menestystarinoita mahdollistavia
         tiloja niin toimisto-, koulutus- ravintola-, kuin hotelliympäristöihin.
         Teemme merkkien eteen markkinointi- ja arkkitehtityötä. Myynti tapahtuu
-        valikoitujen jälleenmyyjien kautta.
+        jälleenmyyjien kautta.
       </p>
       <h3>Näihin me uskomme, olkaa hyvä!</h3>
       <Contact />
     </div>
     <div className={styles.LogoBanner}>
       <div>
-        <img src={Emeco} alt="Emeco logo" />
-        <img src={BlaStation} alt="Blå Station Logo" />
-        <img src={Lapalma} alt="Lapalma Logo" />
-        <img src={Sancal} alt="Sancal logo" />
-        <img src={Rex} alt="Rex-Kralj Logo" />
+        <img src={Emeco} alt="Emeco logo" style={{ transform: 'scale(0.6)' }} />
+        <img
+          src={BlaStation}
+          alt="Blå Station Logo"
+          style={{ transform: 'scale(1.1)' }}
+        />
+        <img
+          src={Lapalma}
+          alt="Lapalma Logo"
+          style={{ transform: 'scale(0.9)' }}
+        />
+        <img
+          src={Sancal}
+          alt="Sancal logo"
+          style={{ transform: 'scale(1.1)' }}
+        />
+        <img
+          src={Rex}
+          alt="Rex-Kralj Logo"
+          style={{ transform: 'scale(0.6)' }}
+        />
       </div>
     </div>
   </div>

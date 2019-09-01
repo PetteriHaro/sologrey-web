@@ -29,6 +29,7 @@ const sancal = props => (
             imageSource={Logo}
             link="https://sancal.com/en/"
             website="sancal.com"
+            maxWidth="200px"
             text="Syntynyt espanjalaisen auringon alla. Tehdas
             sijaitsee Murciassa, vuoriston kätkössä, missä
             sähkökin tuotetaan itse tehtaan tarpeisiin."

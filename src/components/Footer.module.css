@@ -25,6 +25,10 @@
   font-size: 0.35em;
 }
 
+.RightColumn {
+  display: flex;
+}
+
 .Links {
   margin-left: 200px;
   margin-top: 100px;
@@ -62,8 +66,8 @@
   position: absolute;
   bottom: 60px;
   right: 2.5%;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
 }
 
 @media (max-width: 800px) {
@@ -74,27 +78,32 @@
     font-size: 0.5em;
   }
   .Footer {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+    justify-content: space-between;
   }
   .Logo {
-    width: 20%;
+    width: 30%;
     bottom: 20px;
     height: auto;
-    right: 40%;
+    right: 34%;
   }
   .LeftColumn {
-    width: 90%;
-    min-width: 250px;
+    width: 50%;
+    min-width: 200px;
   }
-  .Links {
-    position: absolute;
+  .RightColumn {
+    flex-flow: column;
     right: 5%;
     margin-top: 50px;
+    width: 40%;
+  }
+  .Links {
+    margin-top: 50px;
+    margin-left: 5px;
   }
   .SocialMedia {
-    position: absolute;
-    right: 10%;
-    margin-top: 150px;
+    margin-top: 0;
+    margin-left: 0;
   }
   .SocialItem {
     margin-bottom: -20px;
@@ -102,7 +111,8 @@
   .SocialItem img {
     width: 24px;
     height: 24px;
-    margin: 0 5px;
+    margin: 0;
+    margin-right: 5px;
   }
   .Links a {
     margin: 2px 0;

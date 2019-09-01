@@ -10,10 +10,8 @@
 
 .InfoContainer img {
   width: auto;
-  height: 30%;
   object-fit: contain;
   margin-top: 10px;
-  max-width: 120px;
 }
 
 .InfoContainer a {

@@ -22,10 +22,18 @@ const blaStation = props => (
       <div className={styles.LargeContainer}>
         <div className={styles.TopRow}>
           <div className={styles.LargeTopRowImage}>
-            <img alt="Blå Station" src={BlaStation1} />
+            <img
+              alt="Blå Station"
+              src={BlaStation1}
+              style={{ objectFit: 'cover' }}
+            />
           </div>
           <div className={styles.SmallTopRowImage}>
-            <img alt="Blå Station" src={BlaStation2} />
+            <img
+              alt="Blå Station"
+              src={BlaStation2}
+              style={{ objectFit: 'cover' }}
+            />
           </div>
         </div>
         <div className={styles.BottomRow}>
@@ -36,6 +44,7 @@ const blaStation = props => (
             <div className={styles.CompanyInfo}>
               <CompanyInfo
                 imageSource={Logo}
+                maxWidth="200px"
                 link="http://www.blastation.com/"
                 website="blastation.com"
                 text="Innovatiivinen ruotsalainen perheyritys,

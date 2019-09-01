@@ -72,7 +72,7 @@ const emeco = props => (
           src={Emeco1}
           alt="Emeco"
           className={styles.VerticalPicture}
-          style={{ objectFit: 'cover', marginLeft: '50%' }}
+          style={{ objectFit: 'cover', marginLeft: '40%' }}
         />
       </div>
     </div>

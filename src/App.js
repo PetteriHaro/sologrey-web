@@ -8,18 +8,20 @@ import Sancal from './components/Sancal';
 import Rex from './components/Rex';
 import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div className={styles.App}>
-      <Home />
-      <Emeco />
-      <BlaStation />
-      <Lapalma />
-      <Sancal />
-      <Rex />
-      <Footer />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className={styles.App}>
+        <Home />
+        <Emeco />
+        <BlaStation />
+        <Lapalma />
+        <Sancal />
+        <Rex />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -59,6 +59,8 @@
 .LargeTopRowImage {
   width: 60%;
   height: 100%;
+  background-color: white;
+  overflow: hidden;
 }
 
 .BottoRowLarge {

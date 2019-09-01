@@ -48,7 +48,7 @@ const rex = props => (
         </div>
       </div>
       <div className={styles.VerticalContainer}>
-        <img alt="Rex Kralj" src={Rex4} />
+        <img alt="Rex Kralj" src={Rex4} style={{ objectFit: 'contain' }} />
       </div>
       <div className={styles.VerticalContainer}>
         <img alt="Rex Kralj" src={Rex3} />
