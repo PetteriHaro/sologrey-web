@@ -82,10 +82,11 @@
     justify-content: space-between;
   }
   .Logo {
-    width: 30%;
+    width: 100px;
     bottom: 20px;
     height: auto;
-    right: 34%;
+    left: 50%;
+    margin-left: -50px;
   }
   .LeftColumn {
     width: 50%;
