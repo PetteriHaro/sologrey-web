@@ -106,7 +106,7 @@
   .LeftColumn,
   .RightColumn {
     width: 49%;
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;

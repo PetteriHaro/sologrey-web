@@ -77,6 +77,26 @@
   margin: auto;
 }
 
+.Emeco {
+  transform: scale(0.6);
+}
+
+.BlaStation {
+  transform: scale(1.1);
+}
+
+.Lapalma {
+  transform: scale(0.9);
+}
+
+.Sancal {
+  transform: scale(1.1);
+}
+
+.Rex {
+  transform: scale(0.6);
+}
+
 @media (max-width: 800px) {
   .Home {
     height: auto;
@@ -106,6 +126,7 @@
     top: auto;
   }
   .LogoBanner {
+    margin-top: 50px;
     background: transparent;
     height: auto;
     position: relative;
@@ -118,6 +139,25 @@
   .LogoBanner img {
     width: 25%;
     height: auto;
-    margin: 0;
+    margin: -10px 0;
+  }
+  .Emeco {
+    transform: scale(1);
+  }
+
+  .BlaStation {
+    transform: scale(1);
+  }
+
+  .Lapalma {
+    transform: scale(1);
+  }
+
+  .Sancal {
+    transform: scale(1);
+  }
+
+  .Rex {
+    transform: scale(1);
   }
 }

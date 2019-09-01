@@ -106,7 +106,11 @@ const blaStation = props => (
       </div>
 
       <div className={styles.BottomImage}>
-        <img src={BlaStation1} alt="Blå Station" />
+        <img
+          src={BlaStation1}
+          alt="Blå Station"
+          style={{ objectFit: 'cover' }}
+        />
       </div>
     </div>
 

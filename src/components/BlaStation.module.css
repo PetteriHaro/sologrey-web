@@ -138,7 +138,7 @@
   .MobileGrid {
     width: 90%;
     margin-left: 5%;
-    height: 400px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     flex-flow: column;
@@ -182,7 +182,7 @@
   }
   .BottomImage {
     width: 100%;
-    height: 28%;
+    height: 40%;
   }
   .MobileGrid img {
     width: 100%;

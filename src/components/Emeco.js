@@ -92,7 +92,7 @@ const emeco = props => (
           <img
             src={Emeco1}
             alt="Emeco"
-            style={{ objectFit: 'cover', marginLeft: '50%' }}
+            style={{ objectFit: 'cover', marginLeft: '40%' }}
           />
         </div>
         <div className={styles.RightSmallImage}>

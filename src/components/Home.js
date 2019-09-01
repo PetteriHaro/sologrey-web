@@ -47,27 +47,15 @@ const home = props => (
     </div>
     <div className={styles.LogoBanner}>
       <div>
-        <img src={Emeco} alt="Emeco logo" style={{ transform: 'scale(0.6)' }} />
+        <img src={Emeco} alt="Emeco logo" className={styles.Emeco} />
         <img
           src={BlaStation}
           alt="Blå Station Logo"
-          style={{ transform: 'scale(1.1)' }}
+          className={styles.BlaStation}
         />
-        <img
-          src={Lapalma}
-          alt="Lapalma Logo"
-          style={{ transform: 'scale(0.9)' }}
-        />
-        <img
-          src={Sancal}
-          alt="Sancal logo"
-          style={{ transform: 'scale(1.1)' }}
-        />
-        <img
-          src={Rex}
-          alt="Rex-Kralj Logo"
-          style={{ transform: 'scale(0.6)' }}
-        />
+        <img src={Lapalma} alt="Lapalma Logo" className={styles.Lapalma} />
+        <img src={Sancal} alt="Sancal logo" className={styles.Sancal} />
+        <img src={Rex} alt="Rex-Kralj Logo" className={styles.Rex} />
       </div>
     </div>
   </div>

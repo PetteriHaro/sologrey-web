@@ -67,7 +67,7 @@ const rex = props => (
       </div>
       <div className={styles.RightColumn}>
         <div className={styles.RightImage}>
-          <img src={Rex4} alt="Rex Kralj" />
+          <img src={Rex4} alt="Rex Kralj" style={{ objectFit: 'contain' }} />
         </div>
         <div className={styles.RightImage}>
           <img src={Rex3} alt="Rex Kralj" />

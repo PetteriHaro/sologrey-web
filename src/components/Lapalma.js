@@ -74,30 +74,29 @@ const lapalma = props => (
 
     <img src={Logo} className={styles.TopLogo} alt="Lapalma Logo" />
     <div className={styles.MobileGrid}>
-      <div className={styles.LeftColumn}>
-        <div className={styles.RightTopImage} style={{ height: '50%' }}>
+      <div className={styles.LeftColumn} style={{ width: '38%' }}>
+        <div className={styles.RightTopImage} style={{ height: '46%' }}>
           <img
             src={Lapalma5}
             alt="Lapalma"
             style={{
-              objectFit: 'contain',
-              marginLeft: '-40px',
-              marginTop: '30%',
+              objectFit: 'cover',
+              marginTop: '10%',
             }}
           />
         </div>
-        <div className={styles.RightSmallImage} style={{ height: '23%' }}>
+        <div className={styles.RightSmallImage} style={{ height: '25%' }}>
           <img
             src={Lapalma1}
             alt="Lapalma"
             style={{ transform: 'scale(0.7)' }}
           />
         </div>
-        <div className={styles.RightSmallImage} style={{ height: '23%' }}>
+        <div className={styles.RightSmallImage} style={{ height: '25%' }}>
           <img src={Lapalma4} alt="Lapalma" style={{ objectFit: 'cover' }} />
         </div>
       </div>
-      <div className={styles.RightColumn}>
+      <div className={styles.RightColumn} style={{ width: '60%' }}>
         <div className={styles.LeftTopImage}>
           <img src={Lapalma2} alt="Lapalma" style={{ objectFit: 'cover' }} />
         </div>
