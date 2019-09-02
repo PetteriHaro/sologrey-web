@@ -77,7 +77,12 @@ const emeco = props => (
       </div>
     </div>
 
-    <img src={Logo} className={styles.TopLogo} alt="Emeco Logo" />
+    <img
+      src={Logo}
+      className={styles.TopLogo}
+      alt="Emeco Logo"
+      style={{ transform: 'scale(0.9)' }}
+    />
     <div className={styles.MobileGrid}>
       <div className={styles.LeftColumn}>
         <div className={styles.LeftTopImage}>

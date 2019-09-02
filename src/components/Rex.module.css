@@ -82,12 +82,20 @@
   .Grid {
     display: none;
   }
+  .Chair {
+    top: 100%;
+    left: 60%;
+    height: 200px;
+    width: 200px;
+    transform: rotateY(180deg);
+  }
   .TopLogo {
     display: inline-block;
     height: auto;
     width: 34%;
     object-fit: contain;
     margin-left: 33%;
+    padding-bottom: 8px;
   }
   .MobileGrid {
     width: 90%;
@@ -101,6 +109,7 @@
     width: 90%;
     margin-left: 5%;
     display: inline-block;
+    position: relative;
   }
   .LeftColumn,
   .RightColumn {
@@ -113,7 +122,7 @@
     width: 60%;
   }
   .RightColumn {
-    width: 38%;
+    width: 37%;
   }
   .LeftImageTop {
     height: 70%;

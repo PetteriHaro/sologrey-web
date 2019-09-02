@@ -7,9 +7,15 @@ import Lapalma4 from '../assets/images/lapalma/lapalma-4.jpg';
 import Lapalma5 from '../assets/images/lapalma/lapalma-5.png';
 import Logo from '../assets/logos/lapalma.png';
 import CompanyInfo from './CompanyInfo';
+import Palluratt from '../assets/images/pallurat-2.png';
 
 const lapalma = props => (
   <div className={styles.Emeco}>
+    <img
+      alt="Sologrey Illustration"
+      src={Palluratt}
+      className={styles.BallThree}
+    />
     <div className={styles.Grid}>
       <div
         className={styles.VerticalPictureContainer}
@@ -72,9 +78,14 @@ const lapalma = props => (
       </div>
     </div>
 
-    <img src={Logo} className={styles.TopLogo} alt="Lapalma Logo" />
+    <img
+      src={Logo}
+      className={styles.TopLogo}
+      alt="Lapalma Logo"
+      style={{ paddingBottom: 0 }}
+    />
     <div className={styles.MobileGrid}>
-      <div className={styles.LeftColumn} style={{ width: '38%' }}>
+      <div className={styles.LeftColumn} style={{ width: '37%' }}>
         <div className={styles.RightTopImage} style={{ height: '46%' }}>
           <img
             src={Lapalma5}

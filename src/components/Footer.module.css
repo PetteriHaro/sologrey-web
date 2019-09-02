@@ -17,12 +17,12 @@
 }
 
 .LeftColumn {
-  margin-left: 2.5%;
+  margin-left: 5%;
 }
 
 .Footer p {
   margin: 0;
-  font-size: 0.35em;
+  font-size: 0.4em;
 }
 
 .RightColumn {
@@ -77,6 +77,13 @@
   .Footer h2 {
     font-size: 0.5em;
   }
+  .Footer p {
+    font-size: 0.45em;
+  }
+  .BallOne {
+    top: 0;
+    left: -10%;
+  }
   .Footer {
     padding-bottom: 150px;
     justify-content: space-between;
@@ -91,12 +98,12 @@
   .LeftColumn {
     width: 50%;
     min-width: 200px;
+    margin-left: 8%;
   }
   .RightColumn {
     flex-flow: column;
-    right: 5%;
-    margin-top: 50px;
-    width: 40%;
+    margin-top: 30px;
+    width: 30%;
   }
   .Links {
     margin-top: 50px;
