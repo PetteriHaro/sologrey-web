@@ -12,19 +12,19 @@ import Pallurat from '../assets/images/pallurat-2.png';
 
 const home = props => (
   <div className={styles.Home}>
+    <img className={styles.MainLogo} src={Sologrey} alt="Sologrey Logo" />
+    <img alt="Sologrey Illustration" src={Tuoli} className={styles.Chair} />
+    <img
+      alt="Sologrey Illustration"
+      src={Pallurat}
+      className={styles.BallOne}
+    />
+    <img
+      alt="Sologrey Illustration"
+      src={Pallurat}
+      className={styles.BallTwo}
+    />
     <div className={styles.TextContainer}>
-      <img alt="Sologrey Illustration" src={Tuoli} className={styles.Chair} />
-      <img
-        alt="Sologrey Illustration"
-        src={Pallurat}
-        className={styles.BallOne}
-      />
-      <img
-        alt="Sologrey Illustration"
-        src={Pallurat}
-        className={styles.BallTwo}
-      />
-      <img className={styles.MainLogo} src={Sologrey} alt="Sologrey Logo" />
       <h1>Aitoja asioita,</h1>
       <h1>mahtavia tarinoita!</h1>
       <p style={{ textAlign: 'left' }}>
