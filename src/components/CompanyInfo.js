@@ -8,6 +8,8 @@ const companyInfo = props => (
       alt="Logo"
       style={{
         height: props.height,
+        marginTop: props.sancal ? '-20px' : '0',
+        marginBottom: props.sancal ? '-40px' : '0',
         maxWidth: props.maxWidth ? props.maxWidth : '120px',
       }}
     />

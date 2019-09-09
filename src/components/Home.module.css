@@ -8,10 +8,10 @@
 
 .Chair {
   position: absolute;
-  z-index: -1;
-  top: 10px;
+  z-index: -0;
+  top: 20%;
   right: 10%;
-  height: 80%;
+  height: 60%;
   width: 33%;
   object-fit: contain;
 }
@@ -101,6 +101,13 @@
 @media (max-width: 1200px) {
   .LogoBanner div {
     width: 80%;
+  }
+  .MainLogo {
+    height: 100px;
+    width: 100px;
+  }
+  .TextContainer {
+    margin-bottom: 50px;
   }
 }
 

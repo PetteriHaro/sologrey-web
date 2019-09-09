@@ -25,7 +25,7 @@ const lapalma = props => (
           src={Lapalma5}
           alt="Lapalma"
           className={styles.VerticalPicture}
-          style={{ marginLeft: '-20%', height: '80%', marginTop: '30%' }}
+          style={{ marginLeft: '-15%', height: '80%', marginTop: '25%' }}
         />
       </div>
       <div className={styles.TwoItemContainer}>
@@ -37,12 +37,12 @@ const lapalma = props => (
           />
         </div>
         <div className={styles.BottomSmallImageContainer}>
-          <img src={Lapalma4} alt="Lapalma" />
+          <img src={Lapalma4} alt="Lapalma" style={{ objectFit: 'cover' }} />
         </div>
       </div>
       <div className={styles.TwoItemContainer}>
         <div className={styles.TopSmallImageContainer}>
-          <img src={Lapalma3} alt="Lapalma" />
+          <img src={Lapalma3} alt="Lapalma" style={{ objectFit: 'cover' }} />
         </div>
         <div
           className={styles.BottomSmallImageContainer}
@@ -67,7 +67,7 @@ const lapalma = props => (
 
       <div
         className={styles.VerticalPictureContainer}
-        style={{ overflow: 'hidden' }}
+        style={{ overflow: 'hidden', objectFit: 'cover' }}
       >
         <img
           src={Lapalma2}
@@ -107,7 +107,10 @@ const lapalma = props => (
           <img src={Lapalma4} alt="Lapalma" style={{ objectFit: 'cover' }} />
         </div>
       </div>
-      <div className={styles.RightColumn} style={{ width: '60%' }}>
+      <div
+        className={styles.RightColumn}
+        style={{ width: '60%', textAlign: 'right' }}
+      >
         <div className={styles.LeftTopImage}>
           <img src={Lapalma2} alt="Lapalma" style={{ objectFit: 'cover' }} />
         </div>

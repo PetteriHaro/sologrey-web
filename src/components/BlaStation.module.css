@@ -142,7 +142,7 @@
   .MobileGrid {
     width: 90%;
     margin-left: 5%;
-    height: 500px;
+    height: 450px;
     display: flex;
     justify-content: space-between;
     flex-flow: column;

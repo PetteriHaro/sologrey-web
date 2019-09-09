@@ -70,6 +70,12 @@
   width: 100px;
 }
 
+@media (max-width: 900px) {
+  .Footer {
+    margin-top: 300px;
+  }
+}
+
 @media (max-width: 800px) {
   .BallOne {
     bottom: -70%;
@@ -87,6 +93,7 @@
   .Footer {
     padding-bottom: 150px;
     justify-content: space-between;
+    margin-top: 150px;
   }
   .Logo {
     width: 100px;

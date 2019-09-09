@@ -30,6 +30,7 @@ const sancal = props => (
             link="https://sancal.com/en/"
             website="sancal.com"
             maxWidth="200px"
+            sancal
             text="Syntynyt espanjalaisen auringon alla. Tehdas
             sijaitsee Murciassa, vuoriston kätkössä, missä
             sähkökin tuotetaan itse tehtaan tarpeisiin."

@@ -44,7 +44,16 @@
 
 @media (max-width: 1200px) {
   .App {
-    font-size: 30px;
+    font-size: 34px;
+  }
+  .App h1 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .App {
+    font-size: 28px;
   }
 }
 

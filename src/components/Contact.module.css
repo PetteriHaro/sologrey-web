@@ -1,8 +1,14 @@
 .Contact {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .Contact p {
   font-size: 0.35em;
   margin: 0;
+}
+
+@media (min-width: 1000px) {
+  .Contact {
+    margin-top: 40px;
+  }
 }
