@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import styles from './Rex.module.css';
 import CompanyInfo from './CompanyInfo';
 import Logo from '../assets/logos/rex.png';
@@ -9,91 +10,108 @@ import Rex4 from '../assets/images/rex/rex-4.jpg';
 import Tuoli from '../assets/images/tuolit-1.png';
 import Pallurat from '../assets/images/pallurat-2.png';
 
-const rex = props => (
-  <div className={styles.Rex}>
-    <img alt="Sologrey Illustration" src={Tuoli} className={styles.Chair} />
-    <img
-      alt="Sologrey Illustration"
-      src={Pallurat}
-      className={styles.BallOne}
-    />
-    <div className={styles.Grid}>
-      <div className={styles.VerticalContainer}>
-        <img alt="Rex Kralj" src={Rex2} />
-      </div>
-      <div className={styles.VerticalDouble}>
-        <div className={styles.SmallImage}>
-          <img alt="Rex Kralj" src={Rex1} />
-        </div>
-        <div className={styles.CompanyInfo}>
-          <CompanyInfo
-            imageSource={Logo}
-            link="http://www.rex-kralj.com/"
-            website="rex-kralj.com"
-            text="Slovenialaisen arkkitehdin Niko Kraljin
+class Rex extends React.Component {
+  componentDidMount() {
+    setTimeout(() => {
+      const rect = ReactDOM.findDOMNode(this).getBoundingClientRect();
+      this.props.setDistance(
+        window.innerWidth > 800 ? rect.top - 20 : rect.top,
+        'rex',
+      );
+    }, 1000);
+  }
+  render() {
+    return (
+      <div className={styles.Rex}>
+        <img alt="Sologrey Illustration" src={Tuoli} className={styles.Chair} />
+        <img
+          alt="Sologrey Illustration"
+          src={Pallurat}
+          className={styles.BallOne}
+        />
+        <div className={styles.Grid}>
+          <div className={styles.VerticalContainer}>
+            <img alt="Rex Kralj" src={Rex2} />
+          </div>
+          <div className={styles.VerticalDouble}>
+            <div className={styles.SmallImage}>
+              <img alt="Rex Kralj" src={Rex1} />
+            </div>
+            <div className={styles.CompanyInfo}>
+              <CompanyInfo
+                imageSource={Logo}
+                link="http://www.rex-kralj.com/"
+                website="rex-kralj.com"
+                text="Slovenialaisen arkkitehdin Niko Kraljin
             suunnittelemat kalusteet ovat saaneet
             nähdä uuden päivänvalon, kun kaksi
             kaverusta tunsi näiden ikonisten tuotteiden
             vetovoiman ja he päättivät tuoda klassisen
             malliston nykypäivään uuden yleisön
             nähtäväksi."
-            altText="Niko Kraljin nimissä on rekisteröity yli 120
+                altText="Niko Kraljin nimissä on rekisteröity yli 120
             patenttia ja mallia. Historiaa tutkimalla on
             löydetty Rex ja Shell tuoteperheet sekä
             Mosquito, 1960 ja CC sekä 4455 tuolimallit,
             jotka ovat edelleen ajattoman esteettisiä
             ja yksityiskohdiltaan erottuvia, loistavasti
             tähänkin päivää sopivia."
-          />
+              />
+            </div>
+          </div>
+          <div className={styles.VerticalContainer}>
+            <img alt="Rex Kralj" src={Rex4} style={{ objectFit: 'contain' }} />
+          </div>
+          <div className={styles.VerticalContainer}>
+            <img alt="Rex Kralj" src={Rex3} />
+          </div>
         </div>
-      </div>
-      <div className={styles.VerticalContainer}>
-        <img alt="Rex Kralj" src={Rex4} style={{ objectFit: 'contain' }} />
-      </div>
-      <div className={styles.VerticalContainer}>
-        <img alt="Rex Kralj" src={Rex3} />
-      </div>
-    </div>
 
-    <img src={Logo} className={styles.TopLogo} alt="Rex Kralj Logo" />
-    <div className={styles.MobileGrid}>
-      <div className={styles.LeftColumn}>
-        <div className={styles.LeftImageTop}>
-          <img src={Rex2} alt="Rex Kralj" />
+        <img src={Logo} className={styles.TopLogo} alt="Rex Kralj Logo" />
+        <div className={styles.MobileGrid}>
+          <div className={styles.LeftColumn}>
+            <div className={styles.LeftImageTop}>
+              <img src={Rex2} alt="Rex Kralj" />
+            </div>
+            <div className={styles.LeftImageBottom}>
+              <img src={Rex1} alt="Rex Kralj" />
+            </div>
+          </div>
+          <div className={styles.RightColumn}>
+            <div className={styles.RightImage}>
+              <img
+                src={Rex4}
+                alt="Rex Kralj"
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div className={styles.RightImage}>
+              <img src={Rex3} alt="Rex Kralj" />
+            </div>
+          </div>
         </div>
-        <div className={styles.LeftImageBottom}>
-          <img src={Rex1} alt="Rex Kralj" />
+
+        <div className={styles.MobileText}>
+          <p>
+            Slovenialaisen arkkitehdin Niko Kraljin suunnittelemat kalusteet
+            ovat saaneet nähdä uuden päivänvalon, kun kaksi kaverusta tunsi
+            näiden ikonisten tuotteiden vetovoiman ja he päättivät tuoda
+            klassisen malliston nykypäivään uuden yleisön nähtäväksi.
+          </p>
+          <p style={{ marginBottom: '0' }}>
+            Niko Kraljin nimissä on rekisteröity yli 120 patenttia ja mallia.
+            Historiaa tutkimalla on löydetty Rex ja Shell tuoteperheet sekä
+            Mosquito, 1960 ja CC sekä 4455 tuolimallit, jotka ovat edelleen
+            ajattoman esteettisiä ja yksityiskohdiltaan erottuvia, loistavasti
+            tähänkin päivää sopivia.
+          </p>
+          <a style={{ fontWeight: '600' }} href="http://www.rex-kralj.com/">
+            rex-kralj.com
+          </a>
         </div>
       </div>
-      <div className={styles.RightColumn}>
-        <div className={styles.RightImage}>
-          <img src={Rex4} alt="Rex Kralj" style={{ objectFit: 'contain' }} />
-        </div>
-        <div className={styles.RightImage}>
-          <img src={Rex3} alt="Rex Kralj" />
-        </div>
-      </div>
-    </div>
+    );
+  }
+}
 
-    <div className={styles.MobileText}>
-      <p>
-        Slovenialaisen arkkitehdin Niko Kraljin suunnittelemat kalusteet ovat
-        saaneet nähdä uuden päivänvalon, kun kaksi kaverusta tunsi näiden
-        ikonisten tuotteiden vetovoiman ja he päättivät tuoda klassisen
-        malliston nykypäivään uuden yleisön nähtäväksi.
-      </p>
-      <p style={{ marginBottom: '0' }}>
-        Niko Kraljin nimissä on rekisteröity yli 120 patenttia ja mallia.
-        Historiaa tutkimalla on löydetty Rex ja Shell tuoteperheet sekä
-        Mosquito, 1960 ja CC sekä 4455 tuolimallit, jotka ovat edelleen
-        ajattoman esteettisiä ja yksityiskohdiltaan erottuvia, loistavasti
-        tähänkin päivää sopivia.
-      </p>
-      <a style={{ fontWeight: '600' }} href="http://www.rex-kralj.com/">
-        rex-kralj.com
-      </a>
-    </div>
-  </div>
-);
-
-export default rex;
+export default Rex;

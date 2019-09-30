@@ -19,8 +19,7 @@ const footer = props => (
         Aitoja asioita, mahtavia tarinoita!
       </h3>
       <Contact />
-      <p style={{ marginTop: '30px' }}>(1.10. alkaen)</p>
-      <p>Laivavarustajankatu 2 D LH6</p>
+      <p style={{ marginTop: '30px' }}>Laivanvarustajankatu 2 D LH6</p>
       <p>00140 Helsinki</p>
       <p>Finland</p>
       <p>info@sologrey.fi</p>
