@@ -39,8 +39,16 @@
   margin: 20px 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgba(0, 0, 0, 0.8);
-  text-align: justify;
-  text-justify: distribute;
+  text-align: left;
+  width: 100%;
+}
+
+@supports (text-align: justify) {
+  .App p,
+  .App a {
+    text-align: justify;
+    width: auto;
+  }
 }
 
 @media (max-width: 1200px) {

@@ -1,16 +1,30 @@
 .InfoContainer {
-  width: 92%;
-  height: 100%;
-  margin-left: 4%;
+  width: 100%;
+  height: 160%;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .InfoContainer img {
-  width: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
   margin-top: 10px;
+}
+
+@supports (object-fit: contain) {
+  .InfoContainer img {
+    object-fit: contain;
+    height: unset;
+    width: auto;
+  }
+  .InfoContainer {
+    height: 100%;
+    width: 92%;
+    margin-left: 4%;
+  }
 }
 
 .InfoContainer a {
