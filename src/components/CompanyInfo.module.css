@@ -33,9 +33,3 @@
   font-size: 0.5em;
   font-weight: bold;
 }
-
-@media (max-width: 800px) {
-  .InfoContainer {
-    display: none;
-  }
-}

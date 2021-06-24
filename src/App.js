@@ -5,7 +5,6 @@ import Emeco from './components/Emeco';
 import BlaStation from './components/BlaStation';
 import Lapalma from './components/Lapalma';
 import Sancal from './components/Sancal';
-import Rex from './components/Rex';
 import Footer from './components/Footer';
 
 class App extends React.Component {
@@ -14,13 +13,12 @@ class App extends React.Component {
     blastation: 0,
     lapalma: 0,
     sancal: 0,
-    rex: 0,
   };
   setDistanceToTop = (distance, key) => {
     this.setState({ [key]: distance });
   };
 
-  scrollToSection = logo => {
+  scrollToSection = (logo) => {
     window.scrollTo({
       top: this.state[logo],
       left: 0,
@@ -36,7 +34,6 @@ class App extends React.Component {
         <BlaStation setDistance={this.setDistanceToTop} />
         <Lapalma setDistance={this.setDistanceToTop} />
         <Sancal setDistance={this.setDistanceToTop} />
-        <Rex setDistance={this.setDistanceToTop} />
         <Footer />
       </div>
     );

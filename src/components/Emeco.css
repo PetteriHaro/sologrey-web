@@ -1,0 +1,99 @@
+.emeco-ball-one {
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  left: -30%;
+  height: 150%;
+  width: 80%;
+  object-fit: contain;
+}
+
+.emeco-ball-two {
+  position: absolute;
+  z-index: -1;
+  top: -50%;
+  right: -30%;
+  height: 60%;
+  width: 50%;
+  object-fit: contain;
+}
+
+.emeco-img-1 {
+  grid-column: 1/4;
+  grid-row: 1/8;
+}
+.emeco-img-2 {
+  background-color: white;
+  grid-column: 4/7;
+  grid-row: 1/4;
+}
+.emeco-img-3 {
+  grid-column: 4/7;
+  grid-row: 4/8;
+}
+.emeco-img-4 {
+  grid-column: 7/10;
+  grid-row: 1/4;
+}
+.emeco-img-5 {
+  grid-column: 10/13;
+  grid-row: 1/8;
+  background-color: white;
+  overflow: hidden;
+}
+.emeco-logo {
+  grid-column: 7/10;
+  grid-row: 4/5;
+  object-fit: contain !important;
+  width: 95px !important;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.emeco-info {
+  grid-column: 7/10;
+  grid-row: 5/10;
+  text-align: justify;
+  padding: 10px 10px;
+}
+
+@media (max-width: 800px) {
+  .emeco-img-1 {
+    grid-column: 1/8;
+    grid-row: 3/10;
+  }
+  .emeco-img-2 {
+    background-color: white;
+    grid-column: 8/13;
+    grid-row: 11/13;
+  }
+  .emeco-img-3 {
+    grid-column: 1/8;
+    grid-row: 10/13;
+    object-fit: contain !important;
+    background-color: white;
+  }
+  .emeco-img-4 {
+    grid-column: 8/13;
+    grid-row: 9/11;
+  }
+  .emeco-img-5 {
+    grid-column: 8/13;
+    grid-row: 3/9;
+    background-color: white;
+    overflow: hidden;
+  }
+  .emeco-logo {
+    grid-column: 1/13;
+    grid-row: 1/3;
+    width: 100% !important;
+    height: 80% !important;
+    padding-bottom: 20px;
+    margin-left: 0;
+  }
+  .emeco-info {
+    grid-column: 1/13;
+    grid-row: 13/15;
+    text-align: justify;
+    padding: 10px 0;
+  }
+}

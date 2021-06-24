@@ -5,7 +5,6 @@ import Emeco from '../assets/logos/emeco-logo-alt.png';
 import Sologrey from '../assets/logos/solo-grey.png';
 import BlaStation from '../assets/logos/bla-station.png';
 import Sancal from '../assets/logos/sancal.png';
-import Rex from '../assets/logos/rex.png';
 import Lapalma from '../assets/logos/lapalma.png';
 import Tuoli from '../assets/images/tuolit-1.png';
 import Pallurat from '../assets/images/pallurat-2.png';
@@ -72,12 +71,6 @@ class Home extends React.Component {
               alt="Sancal logo"
               className={styles.Sancal}
               onClick={() => this.props.scrollToSection('sancal')}
-            />
-            <img
-              src={Rex}
-              alt="Rex-Kralj Logo"
-              className={styles.Rex}
-              onClick={() => this.props.scrollToSection('rex')}
             />
           </div>
         </div>

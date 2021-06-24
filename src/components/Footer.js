@@ -6,7 +6,7 @@ import Instagram from '../assets/instagram.png';
 import logo from '../assets/logos/solo-grey.png';
 import Pallurat from '../assets/images/pallurat-2.png';
 
-const footer = props => (
+const footer = (props) => (
   <div className={styles.Footer}>
     <img
       alt="Sologrey Illustration"
@@ -54,13 +54,6 @@ const footer = props => (
           href="https://sancal.com/en/"
         >
           Sancal
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="http://www.rex-kralj.com/"
-        >
-          Rex Kralj
         </a>
       </div>
       <div className={styles.SocialMedia}>
