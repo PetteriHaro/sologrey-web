@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styles from './Emeco.module.css';
 import Lapalma1 from '../assets/images/lapalma/lapalma-1.jpg';
 import Lapalma2 from '../assets/images/lapalma/lapalma-2.jpg';
@@ -13,16 +12,16 @@ import Palluratt from '../assets/images/pallurat-2.png';
 class Lapalma extends React.Component {
   componentDidMount() {
     setTimeout(() => {
-      const rect = ReactDOM.findDOMNode(this).getBoundingClientRect();
+      const top = document.getElementById('lapalmadiv').offsetTop;
       this.props.setDistance(
-        window.innerWidth > 800 ? rect.top - 20 : rect.top,
+        window.innerWidth > 800 ? top - 20 : top,
         'lapalma',
       );
     }, 1000);
   }
   render() {
     return (
-      <div className={styles.Emeco}>
+      <div id="lapalmadiv" className={styles.Emeco}>
         <img
           alt="Sologrey Illustration"
           src={Palluratt}

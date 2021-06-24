@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styles from './BlaStation.module.css';
 import BlaStation1 from '../assets/images/blastation/blastation-1.jpeg';
 import BlaStation2 from '../assets/images/blastation/blastation-2.jpeg';
@@ -14,16 +13,16 @@ import Pallurat from '../assets/images/pallurat-2.png';
 class BlaStation extends React.Component {
   componentDidMount() {
     setTimeout(() => {
-      const rect = ReactDOM.findDOMNode(this).getBoundingClientRect();
+      const top = document.getElementById('blastationdiv').offsetTop;
       this.props.setDistance(
-        window.innerWidth > 800 ? rect.top - 20 : rect.top,
+        window.innerWidth > 800 ? top - 20 : top,
         'blastation',
       );
     }, 1000);
   }
   render() {
     return (
-      <div className={styles.BlaStation}>
+      <div id="blastationdiv" className={styles.BlaStation}>
         <img alt="Sologrey Illustration" src={Tuoli} className={styles.Chair} />
         <img
           alt="Sologrey Illustration"
@@ -56,6 +55,7 @@ class BlaStation extends React.Component {
                 <div className={styles.CompanyInfo}>
                   <CompanyInfo
                     imageSource={Logo}
+                    sancal
                     maxWidth="200px"
                     link="http://www.blastation.com/"
                     website="blastation.com"

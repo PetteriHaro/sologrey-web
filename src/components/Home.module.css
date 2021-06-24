@@ -80,7 +80,7 @@
 }
 
 .Emeco {
-  transform: scale(0.6);
+  transform: scale(1);
 }
 
 .BlaStation {
@@ -96,7 +96,7 @@
 }
 
 .Rex {
-  transform: scale(0.6);
+  transform: scale(1);
 }
 
 @media (max-width: 1200px) {
@@ -160,7 +160,6 @@
   }
   .Emeco {
     transform: scale(1);
-    padding-bottom: 19px;
   }
 
   .BlaStation {
@@ -174,10 +173,12 @@
 
   .Sancal {
     transform: scale(1.06);
-    padding-bottom: 6px;
+    margin-bottom: -40px;
   }
 
   .Rex {
     transform: scale(1);
+    position: absolute;
+    bottom: -40px;
   }
 }

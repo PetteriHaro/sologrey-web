@@ -92,10 +92,9 @@
   .TopLogo {
     display: inline-block;
     height: auto;
-    width: 34%;
+    width: 45%;
     object-fit: contain;
-    margin-left: 33%;
-    padding-bottom: 8px;
+    margin-left: 27.5%;
   }
   .MobileGrid {
     width: 90%;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './CompanyInfo.module.css';
 
-const companyInfo = props => (
+const companyInfo = (props) => (
   <div className={styles.InfoContainer}>
     <img
       src={props.imageSource}
@@ -15,6 +15,7 @@ const companyInfo = props => (
     />
     <p>{props.text}</p>
     {props.altText && <p>{props.altText}</p>}
+    {props.altText && <p>{props.altTextTwo}</p>}
     <a target="_blank" rel="noopener noreferrer" href={props.link}>
       {props.website}
     </a>

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styles from './Sancal.module.css';
 import CompanyInfo from './CompanyInfo';
 import Logo from '../assets/logos/sancal.png';
@@ -15,16 +14,18 @@ import Pallurat from '../assets/images/pallurat-2.png';
 class Sancal extends React.Component {
   componentDidMount() {
     setTimeout(() => {
-      const rect = ReactDOM.findDOMNode(this).getBoundingClientRect();
-      this.props.setDistance(
-        window.innerWidth > 800 ? rect.top - 20 : rect.top,
-        'sancal',
-      );
+      setTimeout(() => {
+        const top = document.getElementById('sancaldiv').offsetTop;
+        this.props.setDistance(
+          window.innerWidth > 800 ? top - 20 : top,
+          'sancal',
+        );
+      });
     }, 1000);
   }
   render() {
     return (
-      <div className={styles.Sancal}>
+      <div id="sancaldiv" className={styles.Sancal}>
         <img alt="Sologrey Illustration" src={Tuoli} className={styles.Chair} />
         <img
           alt="Sologrey Illustration"

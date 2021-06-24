@@ -33,6 +33,7 @@
 }
 
 .App p,
+.App pre,
 .App a {
   font-size: 0.4em;
   line-height: 1.3;

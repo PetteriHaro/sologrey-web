@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styles from './Emeco.module.css';
 import Emeco1 from '../assets/images/emeco/emeco-1.jpg';
 import Emeco2 from '../assets/images/emeco/emeco-2.jpg';
@@ -14,17 +13,14 @@ import Palluratt from '../assets/images/pallurat-2.png';
 class Emeco extends React.Component {
   componentDidMount() {
     setTimeout(() => {
-      const rect = ReactDOM.findDOMNode(this).getBoundingClientRect();
-      this.props.setDistance(
-        window.innerWidth > 800 ? rect.top - 20 : rect.top,
-        'emeco',
-      );
+      const top = document.getElementById('emecodiv').offsetTop;
+      this.props.setDistance(window.innerWidth > 800 ? top - 20 : top, 'emeco');
     }, 1000);
   }
 
   render() {
     return (
-      <div className={styles.Emeco}>
+      <div id="emecodiv" className={styles.Emeco}>
         <img
           alt="Sologrey Illustration"
           src={Pallurat}

@@ -1,28 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styles from './Rex.module.css';
 import CompanyInfo from './CompanyInfo';
 import Logo from '../assets/logos/rex.png';
 import Rex1 from '../assets/images/rex/rex-1.png';
-import Rex2 from '../assets/images/rex/rex-2.png';
+import Rex2 from '../assets/images/rex/rex-2.jpg';
 import Rex3 from '../assets/images/rex/rex-3.jpg';
-import Rex4 from '../assets/images/rex/rex-4.jpg';
+import Rex4 from '../assets/images/rex/rex-4.png';
 import Tuoli from '../assets/images/tuolit-1.png';
 import Pallurat from '../assets/images/pallurat-2.png';
 
 class Rex extends React.Component {
   componentDidMount() {
     setTimeout(() => {
-      const rect = ReactDOM.findDOMNode(this).getBoundingClientRect();
-      this.props.setDistance(
-        window.innerWidth > 800 ? rect.top - 20 : rect.top,
-        'rex',
-      );
+      const top = document.getElementById('rexdiv').offsetTop;
+      this.props.setDistance(window.innerWidth > 800 ? top - 20 : top, 'rex');
     }, 1000);
   }
   render() {
     return (
-      <div className={styles.Rex}>
+      <div id="rexdiv" className={styles.Rex}>
         <img alt="Sologrey Illustration" src={Tuoli} className={styles.Chair} />
         <img
           alt="Sologrey Illustration"
@@ -40,6 +36,8 @@ class Rex extends React.Component {
             <div className={styles.CompanyInfo}>
               <CompanyInfo
                 imageSource={Logo}
+                sancal
+                maxWidth="200px"
                 link="http://www.rex-kralj.com/"
                 website="rex-kralj.com"
                 text="Slovenialaisen arkkitehdin Niko Kraljin
@@ -54,8 +52,9 @@ class Rex extends React.Component {
             löydetty Rex ja Shell tuoteperheet sekä
             Mosquito, 1960 ja CC sekä 4455 tuolimallit,
             jotka ovat edelleen ajattoman esteettisiä
-            ja yksityiskohdiltaan erottuvia, loistavasti
-            tähänkin päivää sopivia."
+            ja yksityiskohdiltaan erottuvia."
+                altTextTwo="2020 uudistuneen brändi-ilmeen sekä uusien tuotteiden myötä
+            mallisto on päivitetty tähän päivään täydellisesti sopivaksi."
               />
             </div>
           </div>
@@ -102,8 +101,11 @@ class Rex extends React.Component {
             Niko Kraljin nimissä on rekisteröity yli 120 patenttia ja mallia.
             Historiaa tutkimalla on löydetty Rex ja Shell tuoteperheet sekä
             Mosquito, 1960 ja CC sekä 4455 tuolimallit, jotka ovat edelleen
-            ajattoman esteettisiä ja yksityiskohdiltaan erottuvia, loistavasti
-            tähänkin päivää sopivia.
+            ajattoman esteettisiä ja yksityiskohdiltaan erottuvia.
+            <br />
+            <br />
+            2020 uudistuneen brändi-ilmeen sekä uusien tuotteiden myötä mallisto
+            on päivitetty tähän päivään täydellisesti sopivaksi.
           </p>
           <a style={{ fontWeight: '600' }} href="http://www.rex-kralj.com/">
             rex-kralj.com
